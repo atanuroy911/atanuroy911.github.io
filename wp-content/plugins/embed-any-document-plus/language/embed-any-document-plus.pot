@@ -1,0 +1,500 @@
+# Copyright (C) 2020 Awsm Innovations
+# This file is distributed under the same license as the Embed Any Document Plus plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Embed Any Document Plus 2.6.0\n"
+"Report-Msgid-Bugs-To: https://awsm.in/support\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Awsm Innovations <hello@awsm.in>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-07-16T08:25:36+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: embed-any-document-plus\n"
+
+#. Plugin Name of the plugin
+#: ead-plus.php:232
+msgid "Embed Any Document Plus"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "http://awsm.in/ead-plus-documentation/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Embed Any Document WordPress plugin lets you upload and embed your documents easily in your WordPress website without any additional browser plugins like Flash or Acrobat reader. The plugin lets you choose between Google Docs Viewer and Microsoft Office Online to display your documents."
+msgstr ""
+
+#. Author of the plugin
+msgid "Awsm Innovations"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://awsm.in"
+msgstr ""
+
+#: ead-plus.php:159
+#: inc/popup.php:18
+#: blocks/document/main.js:76
+msgid "Add Document"
+msgstr ""
+
+#: ead-plus.php:172
+msgid "Settings"
+msgstr ""
+
+#: ead-plus.php:219
+#: ead-plus.php:453
+msgid "Download"
+msgstr ""
+
+#: ead-plus.php:222
+msgid "Select"
+msgstr ""
+
+#: ead-plus.php:228
+msgid "Nothing to insert"
+msgstr ""
+
+#: ead-plus.php:229
+msgid "The document you have chosen is a not public."
+msgstr ""
+
+#: ead-plus.php:229
+msgid " Only the owner and explicitly shared collaborators will be able to view it."
+msgstr ""
+
+#: ead-plus.php:230
+msgid "Invalid URL"
+msgstr ""
+
+#: ead-plus.php:231
+msgid "From URL"
+msgstr ""
+
+#: ead-plus.php:233
+msgid "No API key"
+msgstr ""
+
+#: ead-plus.php:297
+msgid "Loader"
+msgstr ""
+
+#: ead-plus.php:298
+#: inc/popup.php:201
+msgid "Loading..."
+msgstr ""
+
+#: ead-plus.php:303
+msgid "EAD Logo"
+msgstr ""
+
+#: ead-plus.php:304
+msgid "Taking too long?"
+msgstr ""
+
+#: ead-plus.php:308
+msgid "Reload"
+msgstr ""
+
+#: ead-plus.php:308
+msgid "Reload document"
+msgstr ""
+
+#: ead-plus.php:312
+msgid "Open"
+msgstr ""
+
+#: ead-plus.php:312
+msgid "Open in new tab"
+msgstr ""
+
+#: ead-plus.php:392
+#: inc/settings.php:198
+#: blocks/document/modules/inspector.js:61
+msgid "Dropbox"
+msgstr ""
+
+#: ead-plus.php:393
+#: blocks/document/modules/inspector.js:45
+msgid "Google Docs Viewer"
+msgstr ""
+
+#: ead-plus.php:394
+#: blocks/document/modules/inspector.js:54
+msgid "Browser Based"
+msgstr ""
+
+#: ead-plus.php:395
+#: blocks/document/modules/inspector.js:48
+msgid "Microsoft Office Online"
+msgstr ""
+
+#: ead-plus.php:624
+msgid "Embedded Document"
+msgstr ""
+
+#: ead-plus.php:634
+msgid "No Url Found"
+msgstr ""
+
+#: ead-plus.php:776
+msgid "Configure"
+msgstr ""
+
+#. translators: %1$s: Service provider
+#: ead-plus.php:786
+msgid "Add from %1$s"
+msgstr ""
+
+#: ead-plus.php:1119
+msgid "Invalid Envato purchase key"
+msgstr ""
+
+#. translators: %s: link to settings page to add the license key
+#: ead-plus.php:1134
+#: ead-plus.php:1155
+msgid "Please <a href=\"%s\">activate your copy</a> of Embed Any Document Plus to receive automatic updates."
+msgstr ""
+
+#: inc/popup.php:16
+msgid "Close"
+msgstr ""
+
+#: inc/popup.php:43
+msgid "Upload Document"
+msgstr ""
+
+#: inc/popup.php:44
+msgid "Add from URL"
+msgstr ""
+
+#: inc/popup.php:65
+msgid "Enter document URL"
+msgstr ""
+
+#: inc/popup.php:70
+msgid "back"
+msgstr ""
+
+#: inc/popup.php:92
+msgid "Advanced Options"
+msgstr ""
+
+#: inc/popup.php:92
+msgid "(Leave blank for default settings)"
+msgstr ""
+
+#: inc/popup.php:105
+#: inc/settings.php:97
+#: blocks/document/modules/inspector.js:74
+msgid "Width"
+msgstr ""
+
+#: inc/popup.php:111
+#: inc/settings.php:101
+#: blocks/document/modules/inspector.js:78
+msgid "Height"
+msgstr ""
+
+#: inc/popup.php:117
+#: blocks/document/modules/inspector.js:83
+msgid "Show Download Link"
+msgstr ""
+
+#: inc/popup.php:121
+#: inc/settings.php:115
+#: blocks/document/modules/inspector.js:84
+msgid "For all users"
+msgstr ""
+
+#: inc/popup.php:122
+#: inc/settings.php:116
+#: blocks/document/modules/inspector.js:85
+msgid "For Logged-in users"
+msgstr ""
+
+#: inc/popup.php:123
+#: inc/settings.php:117
+#: blocks/document/modules/inspector.js:86
+msgid "No Download"
+msgstr ""
+
+#: inc/popup.php:130
+#: blocks/document/modules/inspector.js:64
+msgid "Download Text"
+msgstr ""
+
+#: inc/popup.php:136
+#: inc/popup.php:144
+#: blocks/document/modules/inspector.js:91
+msgid "Viewer"
+msgstr ""
+
+#: inc/popup.php:148
+msgid "Box"
+msgstr ""
+
+#: inc/popup.php:151
+msgid "Drive"
+msgstr ""
+
+#: inc/popup.php:157
+#: blocks/document/modules/inspector.js:100
+msgid "Theme"
+msgstr ""
+
+#: inc/popup.php:161
+#: blocks/document/modules/inspector.js:101
+msgid "Dark"
+msgstr ""
+
+#: inc/popup.php:162
+#: blocks/document/modules/inspector.js:102
+msgid "Light"
+msgstr ""
+
+#. translators: %1$s: strong opening tag, %2$s: strong closing tag
+#: inc/popup.php:171
+msgid "%1$s Note:%2$s Browser based PDF embedding feature is not supported by certain browsers and some external servers. Google viewer will be used as a fallback for the unsupported browsers."
+msgstr ""
+
+#: inc/popup.php:186
+msgid "Do not cache this file (Affects performance)"
+msgstr ""
+
+#: inc/popup.php:191
+msgid "Shortcode Preview"
+msgstr ""
+
+#: inc/popup.php:201
+msgid "Insert"
+msgstr ""
+
+#: inc/popup.php:204
+msgid "Cancel"
+msgstr ""
+
+#: inc/settings.php:16
+msgid "Embed Any Document by AWSM.in"
+msgstr ""
+
+#: inc/settings.php:46
+msgid "General Settings"
+msgstr ""
+
+#: inc/settings.php:49
+msgid "Cloud Settings"
+msgstr ""
+
+#: inc/settings.php:63
+msgid "License"
+msgstr ""
+
+#: inc/settings.php:93
+msgid "Default size"
+msgstr ""
+
+#: inc/settings.php:105
+msgid "Enter values in pixels or percentage (Example: 500px or 100%)"
+msgstr ""
+
+#: inc/settings.php:110
+msgid "Show download link"
+msgstr ""
+
+#: inc/settings.php:125
+msgid "Download text"
+msgstr ""
+
+#: inc/settings.php:134
+msgid "Show file size"
+msgstr ""
+
+#: inc/settings.php:139
+msgid "Yes"
+msgstr ""
+
+#: inc/settings.php:140
+msgid "No"
+msgstr ""
+
+#: inc/settings.php:148
+msgid "Google Picker view"
+msgstr ""
+
+#: inc/settings.php:157
+msgid "File view"
+msgstr ""
+
+#: inc/settings.php:162
+msgid "Folder view"
+msgstr ""
+
+#: inc/settings.php:166
+msgid "Select default view for your Google Drive Picker interface"
+msgstr ""
+
+#: inc/settings.php:203
+#: inc/settings.php:236
+#: inc/settings.php:263
+msgid "API Key"
+msgstr ""
+
+#: inc/settings.php:212
+#: inc/settings.php:272
+msgid "Obtain API key"
+msgstr ""
+
+#: inc/settings.php:217
+#: inc/settings.php:250
+#: inc/settings.php:277
+msgid "How to do it ?"
+msgstr ""
+
+#: inc/settings.php:225
+msgid "Google Drive"
+msgstr ""
+
+#: inc/settings.php:230
+msgid "Client ID"
+msgstr ""
+
+#: inc/settings.php:245
+msgid "Obtain Client ID and API Key"
+msgstr ""
+
+#: inc/settings.php:258
+msgid "Box.com"
+msgstr ""
+
+#: inc/settings.php:305
+msgid "envato"
+msgstr ""
+
+#: inc/settings.php:310
+msgid "Envato purchase key"
+msgstr ""
+
+#: inc/settings.php:319
+msgid "Obtain purchase key"
+msgstr ""
+
+#: inc/settings.php:324
+msgid "How to get it ?"
+msgstr ""
+
+#: inc/settings.php:355
+msgid "Designed and developed by"
+msgstr ""
+
+#: inc/settings.php:358
+msgid "Facebook"
+msgstr ""
+
+#: inc/settings.php:359
+msgid "Twitter"
+msgstr ""
+
+#: inc/settings.php:360
+msgid "Github"
+msgstr ""
+
+#: inc/settings.php:369
+msgid "Like the plugin?"
+msgstr ""
+
+#: inc/settings.php:369
+msgid "Rate Now!"
+msgstr ""
+
+#: inc/settings.php:375
+msgid "Need Help?"
+msgstr ""
+
+#: inc/settings.php:375
+msgid "Open a Ticket"
+msgstr ""
+
+#: inc/settings.php:382
+msgid "Quick Help"
+msgstr ""
+
+#: inc/settings.php:385
+#: inc/settings.php:386
+msgid "How to Embed Documents?"
+msgstr ""
+
+#: inc/settings.php:390
+#: inc/settings.php:391
+msgid "About Viewers"
+msgstr ""
+
+#: inc/settings.php:395
+#: inc/settings.php:396
+msgid "Shortcode & Attributes"
+msgstr ""
+
+#: inc/settings.php:400
+#: inc/settings.php:401
+msgid "FAQs"
+msgstr ""
+
+#: blocks/document/main.js:25
+#: blocks/document/main.js:74
+#: blocks/document/modules/ead-server-side-render.js:198
+#: blocks/document/modules/ead-server-side-render.js:209
+msgid "Document"
+msgstr ""
+
+#: blocks/document/main.js:26
+#: blocks/document/main.js:74
+msgid "Upload and Embed your documents."
+msgstr ""
+
+#: blocks/document/main.js:29
+msgid "add document"
+msgstr ""
+
+#: blocks/document/main.js:29
+msgid "embed document"
+msgstr ""
+
+#: blocks/document/main.js:29
+msgid "embed any document"
+msgstr ""
+
+#: blocks/document/modules/ead-server-side-render.js:199
+msgid "No document found!"
+msgstr ""
+
+#. translators: %s: error message describing the problem
+#: blocks/document/modules/ead-server-side-render.js:205
+msgid "Error loading the document: %s"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:57
+msgid "Built-In Viewer"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:64
+msgid "Default download button text"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:74
+msgid "Width of document either in px or in %"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:78
+msgid "Height of document either in px or in %"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:96
+msgid "Cache"
+msgstr ""
+
+#: blocks/document/modules/inspector.js:100
+msgid "Choose a theme for Box.com embeds"
+msgstr ""
