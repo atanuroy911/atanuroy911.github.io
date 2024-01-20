@@ -75,26 +75,46 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-49775633-2"
 
 
 # Site Author
 author:
-  name             : "Soumya Dutta"
-  avatar           : "sdutta_BW.png"
-  bio              : "Assistant Professor of Computer Science & Engg. at IIT Kanpur Email: soumyad [at] cse [dot] iitk [dot] ac [dot] in"
-  location         : "Kanpur, Uttar Pradesh, India"
-  employer         : 
-  googlescholar    : "https://scholar.google.com/citations?user=7CGMUB8AAAAJ&hl=en&oi=ao"
-  email            : 
-  researchgate     : "https://www.researchgate.net/profile/Soumya-Dutta-7"
-  linkedin         : "soumya-dutta-cse"
-  orcid            : "https://orcid.org/0000-0001-5030-9979"
-  twitter          : "SoumyaCSE"
+  name             : "Atanu Shuvam Roy"
+  avatar           : "profile.png"
+  bio              : "MTech student at Computer Science & Engg. at IIT Kanpur Email: atanusroy [at] cse [dot] iitk [dot] ac [dot] in"
+  location         : "Kanpur, UP"
+  employer         :
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=E-2mKPsAAAAJ&hl=en"
+  email            :
+  researchgate     :  "https://www.researchgate.net/profile/Atanu-Roy-8"
+  uri              :
   bitbucket        :
-  github           : 
-
-
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : 
+  foursquare       :
+  github           : "atanuroy911"
+  google_plus      :
+  keybase          :
+  instagram        : "https://www.instagram.com/atanuroy911/?hl=en"
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         : "https://www.linkedin.com/in/atanu-shuvam-roy"
+  orcid            : "https://orcid.org/0000-0002-5522-9043"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : 
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : "https://www.youtube.com/channel/UCPTTDbT_SKTT9mI8fnR98VA"
+  wikipedia        :
 
 # Reading Files
 include:
