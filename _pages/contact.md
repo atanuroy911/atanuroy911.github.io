@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <div class="box"><p>
-<img class="map" src="/images/KD.png" width="38%;" align="left" style="margin: 0px 10px 0px 15px;"/>
+<img class="map" src="/images/KD-tiny.jpg" width="38%;" align="left" style="margin: 0px 10px 0px 15px;"/>
 </p></div>
 <div class="box" style="text-align:justify">
 <h1>Atanu Shuvam Roy</h1>
