@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 <div style="text-align: justify"> <p>
-Atanu Shuvam Roy is a Masters student in the <a href="https://www.cse.iitk.ac.in">Department of Computer Science and Engineering</a> (CSE) at the <a href="https://www.iitk.ac.in">Indian Institute of Technology, Kanpur (IITK)</a>. Atanu obtained his Bachelor degree in Computer Science and Engineering from the <a href="www.jxust.edu.cn">Jiangxi University of Science and Technology 【江西理工大学】</a> in Jan 2022 where he was part of the <a href="http://rarlroboticresearchlab.github.io/">Robotics and Automation Research Lab (RARL)</a>. For more details, please take a look at Atanu's <b><a href="/docs/Atanu_Roy_CV.pdf">CV</a></b>.
+Atanu Shuvam Roy is a Lecturer in the <a href="https://cse.ulab.edu.bd/">Department of Computer Science and Engineering</a> at the <a href="https://ulab.edu.bd/">University of Liberal Arts Bangladesh (ULAB)</a>. He obtained his Master’s degree in Computer Science and Engineering from the <a href="https://www.cse.iitk.ac.in">Department of Computer Science and Engineering</a> at the <a href="https://www.iitk.ac.in">Indian Institute of Technology, Kanpur (IITK)</a>. Atanu completed his Bachelor’s degree in Computer Science and Engineering at the <a href="https://www.jxust.edu.cn">Jiangxi University of Science and Technology 【江西理工大学】</a> in January 2022, where he was part of the <a href="http://rarlroboticresearchlab.github.io/">Robotics and Automation Research Lab (RARL)</a>. For more details, please take a look at Atanu's <b><a href="/docs/Atanu_Roy_Research_CV.pdf">CV</a></b>.
 </p>
 
 
 <p><strong>
-Atanu's current research interests include: (1) Embedded Systems, (2) Internet of Things (IoT), (3) Sensor Systems and (4) Human Computer Interaction
+Atanu's current research interests include: (1) Embedded Systems, (2) Internet of Things (IoT), (3) Robotics & Automation, (4) Computer Vision
 </strong></p>
 
 
@@ -39,7 +39,8 @@ Atanu's current research interests include: (1) Embedded Systems, (2) Internet o
 
 
 <div><center>
-<img style="height:50px" src="images/jxust.png"/>
-<img style="height:50px" src="images/rarl.png"/>
+<img style="height:50px" src="images/ulab.png"/>
 <img style="height:75px" src="images/iitkredlogo.png"/>
+<img style="height:50px" src="images/rarl.png"/>
+<img style="height:50px" src="images/jxust.png"/>
 </center></div>
