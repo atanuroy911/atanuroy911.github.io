@@ -1,0 +1,146 @@
+{% assign redirect_target = "https://atanusroy.com" | append: page.url | replace: "index.html", "" %}
+
+<style>
+  .redirect-popup {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 99999;
+  }
+
+  .redirect-popup.is-visible {
+    display: flex;
+  }
+
+  .redirect-popup__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 16, 24, 0.7);
+    backdrop-filter: blur(10px);
+  }
+
+  .redirect-popup__panel {
+    position: relative;
+    width: min(100%, 460px);
+    border-radius: 20px;
+    padding: 28px 30px;
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: left;
+  }
+
+  .redirect-popup__eyebrow {
+    margin: 0 0 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0f766e;
+  }
+
+  .redirect-popup__panel h2 {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .redirect-popup__panel p {
+    margin: 0 0 18px;
+    color: #4b5563;
+  }
+
+  .redirect-popup__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .redirect-popup__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 11px 18px;
+    background: #0f766e;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .redirect-popup__button:hover {
+    background: #115e59;
+  }
+</style>
+
+<div class="redirect-popup" id="redirect-popup" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="redirect-popup__backdrop"></div>
+  <div class="redirect-popup__panel">
+    <p class="redirect-popup__eyebrow">Site moved</p>
+    <h2>You are being redirected to atanusroy.com</h2>
+    <p>This page will forward in <strong><span id="redirect-countdown">3</span> seconds</strong>.</p>
+    <div class="redirect-popup__actions">
+      <a class="redirect-popup__button" id="redirect-now" href="{{ redirect_target }}">Go now</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var redirectTarget = "{{ redirect_target }}";
+    var popup = document.getElementById("redirect-popup");
+    var countdownElement = document.getElementById("redirect-countdown");
+    var redirectButton = document.getElementById("redirect-now");
+    var countdown = 3;
+    var countdownTimer;
+    var redirectTimer;
+
+    function redirectNow() {
+      window.location.replace(redirectTarget);
+    }
+
+    function showPopup() {
+      if (!popup) {
+        redirectNow();
+        return;
+      }
+
+      popup.classList.add("is-visible");
+      popup.setAttribute("aria-hidden", "false");
+
+      countdownTimer = window.setInterval(function () {
+        countdown -= 1;
+
+        if (countdownElement) {
+          countdownElement.textContent = String(Math.max(countdown, 0));
+        }
+
+        if (countdown <= 0) {
+          window.clearInterval(countdownTimer);
+        }
+      }, 1000);
+
+      redirectTimer = window.setTimeout(redirectNow, 3000);
+    }
+
+    if (redirectButton) {
+      redirectButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.clearTimeout(redirectTimer);
+        window.clearInterval(countdownTimer);
+        redirectNow();
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", showPopup);
+    } else {
+      showPopup();
+    }
+  }());
+</script>

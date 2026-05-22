@@ -18,4 +18,16 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
+<script>
+  (function () {
+    var redirectTarget = "https://atanusroy.com{{ page.url | replace: 'index.html', '' }}";
+    var userAgent = (navigator.userAgent || "") + " " + ((navigator.userAgentData && navigator.userAgentData.brands && navigator.userAgentData.brands.map) ? navigator.userAgentData.brands.map(function (brand) { return brand.brand; }).join(" ") : "");
+    var crawlerPattern = /(bot|crawler|spider|slurp|preview|headless|lighthouse|wget|curl|python-requests|httpclient|aiohttp|scrapy|feedfetcher|facebookexternalhit|linkedinbot|ia_archiver|GPTBot|Google-Extended|PerplexityBot|ClaudeBot|CCBot|Bytespider|Amazonbot|OAI-SearchBot|ChatGPT-User|SemrushBot|AhrefsBot)/i;
+
+    if (crawlerPattern.test(userAgent)) {
+      window.location.replace(redirectTarget);
+    }
+  }());
+</script>
+
 <meta http-equiv="cleartype" content="on">
