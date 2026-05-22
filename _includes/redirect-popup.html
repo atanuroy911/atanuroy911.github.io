@@ -76,6 +76,15 @@
   .redirect-popup__button:hover {
     background: #115e59;
   }
+
+  .redirect-popup__button--secondary {
+    background: #e5e7eb;
+    color: #111827 !important;
+  }
+
+  .redirect-popup__button--secondary:hover {
+    background: #d1d5db;
+  }
 </style>
 
 <div class="redirect-popup" id="redirect-popup" aria-hidden="true" role="dialog" aria-modal="true">
@@ -86,6 +95,7 @@
     <p>This page will forward in <strong><span id="redirect-countdown">3</span> seconds</strong>.</p>
     <div class="redirect-popup__actions">
       <a class="redirect-popup__button" id="redirect-now" href="{{ redirect_target }}">Go now</a>
+      <button class="redirect-popup__button redirect-popup__button--secondary" id="redirect-stop" type="button">Stop redirect</button>
     </div>
   </div>
 </div>
@@ -96,12 +106,29 @@
     var popup = document.getElementById("redirect-popup");
     var countdownElement = document.getElementById("redirect-countdown");
     var redirectButton = document.getElementById("redirect-now");
+    var stopButton = document.getElementById("redirect-stop");
     var countdown = 3;
     var countdownTimer;
     var redirectTimer;
+    var redirectCancelled = false;
 
     function redirectNow() {
+      if (redirectCancelled) {
+        return;
+      }
+
       window.location.replace(redirectTarget);
+    }
+
+    function stopRedirect() {
+      redirectCancelled = true;
+      window.clearTimeout(redirectTimer);
+      window.clearInterval(countdownTimer);
+
+      if (popup) {
+        popup.classList.remove("is-visible");
+        popup.setAttribute("aria-hidden", "true");
+      }
     }
 
     function showPopup() {
@@ -135,6 +162,10 @@
         window.clearInterval(countdownTimer);
         redirectNow();
       });
+    }
+
+    if (stopButton) {
+      stopButton.addEventListener("click", stopRedirect);
     }
 
     if (document.readyState === "loading") {
