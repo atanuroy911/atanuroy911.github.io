@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atanu Roy's GitHub Pages profile with links to the main site and email contact." />
+    <meta name="keywords" content="Atanu Roy, web developer, app developer, ReactJS developer, ML engineer, DevOps engineer, Python developer, AI automation engineer, product manager, embedded systems, IoT researcher" />
+    <meta name="author" content="Atanu Roy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:title" content="Atanu Roy" />
+    <meta property="og:description" content="Links to Atanu Roy's main site and email contact." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Atanu Roy" />
+    <meta name="twitter:description" content="Links to Atanu Roy's main site and email contact." />
+    <title>Atanu Roy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        font-family: Inter, sans-serif;
+        background: #040812;
+        overflow-x: hidden;
+      }
+
+      .scene-layer {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .headline {
+        font-family: Space Grotesk, sans-serif;
+        letter-spacing: -0.04em;
+      }
+
+      .cursor::after {
+        content: "|";
+        margin-left: 0.15em;
+        color: rgba(226, 232, 240, 0.9);
+        animation: blink 1s steps(1) infinite;
+      }
+
+      .glass-panel {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.08),
+          0 24px 80px rgba(0, 0, 0, 0.38);
+        backdrop-filter: blur(28px) saturate(180%);
+      }
+
+      .glass-panel::before,
+      .glass-panel::after,
+      .glass-tile::before,
+      .glass-tile::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+
+      .glass-panel::before,
+      .glass-tile::before {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+          radial-gradient(circle at 20% 18%, rgba(120, 220, 255, 0.16), transparent 28%),
+          radial-gradient(circle at 80% 0%, rgba(0, 255, 214, 0.1), transparent 22%);
+        filter: url(#displacementFilter) brightness(1.15);
+        opacity: 0.5;
+      }
+
+      .glass-panel::after,
+      .glass-tile::after {
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 28%, rgba(255, 255, 255, 0.04) 55%, transparent 78%),
+          radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.18), transparent 18%);
+        mix-blend-mode: screen;
+        opacity: 0.35;
+      }
+
+      .glass-panel > *,
+      .glass-tile > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .glass-tile {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 18px 42px rgba(0, 0, 0, 0.24);
+        backdrop-filter: blur(22px) saturate(180%);
+      }
+
+      .aurora {
+        position: fixed;
+        inset: -20%;
+        z-index: -2;
+        opacity: 0.78;
+        filter: saturate(160%);
+        animation: auroraShift 24s ease-in-out infinite alternate;
+      }
+
+      .aurora-blob {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(18px);
+        mix-blend-mode: screen;
+        will-change: transform, filter, opacity;
+      }
+
+      .aurora-blob.red {
+        width: 34vw;
+        height: 34vw;
+        background: radial-gradient(circle, rgba(255, 76, 76, 0.68) 0%, rgba(255, 76, 76, 0.3) 30%, transparent 72%);
+      }
+
+      .aurora-blob.orange {
+        width: 30vw;
+        height: 30vw;
+        background: radial-gradient(circle, rgba(255, 163, 43, 0.58) 0%, rgba(255, 163, 43, 0.24) 32%, transparent 72%);
+      }
+
+      .aurora-blob.blue {
+        width: 32vw;
+        height: 32vw;
+        background: radial-gradient(circle, rgba(47, 156, 255, 0.56) 0%, rgba(47, 156, 255, 0.24) 32%, transparent 72%);
+      }
+
+      .aurora-blob.green {
+        width: 28vw;
+        height: 28vw;
+        background: radial-gradient(circle, rgba(37, 223, 165, 0.52) 0%, rgba(37, 223, 165, 0.22) 34%, transparent 72%);
+      }
+
+      .aurora-glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), rgba(255, 255, 255, 0.12), transparent 16%),
+          radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05), transparent 45%);
+        mix-blend-mode: screen;
+        opacity: 0.7;
+      }
+
+      .ripple-layer {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .ripple {
+        position: absolute;
+        width: 18rem;
+        height: 18rem;
+        margin-left: -9rem;
+        margin-top: -9rem;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(124, 58, 237, 0.18) 26%, rgba(56, 189, 248, 0.12) 48%, transparent 72%);
+        filter: blur(14px);
+        mix-blend-mode: screen;
+        transform: scale(0.2);
+        opacity: 0;
+        animation: rippleRise 1.4s ease-out forwards;
+      }
+
+      /* liquid-smear removed */
+
+      .ripple.alt {
+        width: 24rem;
+        height: 24rem;
+        margin-left: -12rem;
+        margin-top: -12rem;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.18) 0%, rgba(251, 191, 36, 0.16) 24%, rgba(16, 185, 129, 0.1) 50%, transparent 74%);
+        animation-duration: 1.8s;
+      }
+
+      @keyframes rippleRise {
+        0% {
+          transform: scale(0.1);
+          opacity: 0.72;
+        }
+        70% {
+          opacity: 0.22;
+        }
+        100% {
+          transform: scale(1.05);
+          opacity: 0;
+        }
+      }
+
+      @keyframes auroraShift {
+        0% {
+          transform: translate3d(-2%, -2%, 0) scale(1);
+        }
+        25% {
+          transform: translate3d(2%, -1%, 0) scale(1.06);
+        }
+        50% {
+          transform: translate3d(1%, 2%, 0) scale(1.03);
+        }
+        75% {
+          transform: translate3d(-1%, 1%, 0) scale(1.08);
+        }
+        100% {
+          transform: translate3d(2%, -2%, 0) scale(1.04);
+        }
+      }
+
+      @keyframes hueWave {
+        0% {
+          filter: blur(70px) saturate(150%) hue-rotate(0deg);
+        }
+        100% {
+          filter: blur(70px) saturate(170%) hue-rotate(360deg);
+        }
+      }
+
+      @keyframes blink {
+        0%,
+        49% {
+          opacity: 1;
+        }
+        50%,
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen text-slate-100 antialiased">
+    <div class="scene-layer aurora" id="aurora-scene">
+      <div class="aurora-blob red" data-depth="0.7"></div>
+      <div class="aurora-blob orange" data-depth="0.95"></div>
+      <div class="aurora-blob blue" data-depth="1.1"></div>
+      <div class="aurora-blob green" data-depth="0.85"></div>
+      <div class="aurora-glow"></div>
+    </div>
+    <div class="ripple-layer" id="ripple-layer"></div>
+    <main class="mx-auto flex min-h-screen w-full max-w-5xl items-center px-6 py-10 sm:px-10">
+      <section class="glass-panel w-full rounded-[2rem] p-8 sm:p-12">
+        <p class="text-xs uppercase tracking-[0.45em] text-slate-300/80">Atanu Roy</p>
+        <h1 class="headline mt-4 text-5xl font-bold text-white sm:text-7xl">Hi 👋, I&apos;m Atanu</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+          <span class="cursor" id="bio-line">Freelancer</span>
+        </p>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+          <a href="https://atanusroy.com" target="_blank" rel="noreferrer" class="glass-tile group w-full min-w-0 rounded-[1.75rem] p-5 transition hover:-translate-y-1 hover:border-cyan-200/50 hover:bg-white/12 sm:p-6">
+            <p class="text-xs uppercase tracking-[0.3em] text-cyan-100/80">Main site</p>
+            <p class="headline mt-3 break-words text-3xl font-bold text-white sm:text-5xl">atanusroy.com</p>
+            <p class="mt-3 text-sm text-slate-300">Open the real website.</p>
+          </a>
+
+          <a href="mailto:atanuroy911@gmail.com" class="glass-tile group w-full min-w-0 rounded-[1.75rem] p-5 transition hover:-translate-y-1 hover:border-emerald-200/40 hover:bg-white/12 sm:p-6">
+            <p class="text-xs uppercase tracking-[0.3em] text-emerald-100/80">Email</p>
+            <p class="headline mt-3 break-words text-2xl font-bold text-white sm:text-4xl">atanuroy911@gmail.com</p>
+            <p class="mt-3 text-sm text-slate-300">Use this to reach me directly.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <svg aria-hidden="true" focusable="false" class="absolute h-0 w-0 overflow-hidden">
+      <filter id="displacementFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.02 0.035" numOctaves="2" seed="8" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+      <!-- liquidFilter removed -->
+    </svg>
+
+    <script>
+      const bioWords = [
+        "Freelancer",
+        "Developer",
+        "Web Developer",
+        "App Developer",
+        "Web Designer",
+        "UI/UX Developer",
+        "ReactJS Developer",
+        "ML Engineer",
+        "DevOps Engineer",
+        "Python Developer",
+        "AI Automation Engineer",
+        "Product Manager",
+        "Embedded System Researcher",
+        "IoT Researcher",
+        "AI Engineer",
+        "Researcher",
+        "Teacher",
+      ];
+      const bioElement = document.getElementById("bio-line");
+      const auroraScene = document.getElementById("aurora-scene");
+      const rippleLayer = document.getElementById("ripple-layer");
+      const typingDelay = 90;
+      const deletingDelay = 55;
+      const pauseDelay = 1200;
+
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      const auroraBlobs = Array.from(document.querySelectorAll(".aurora-blob"));
+      const motionState = auroraBlobs.map((blob, index) => ({
+        blob,
+        depth: Number(blob.dataset.depth || 1),
+        offsetX: (index - 1.5) * 18,
+        offsetY: index % 2 === 0 ? -12 : 10,
+        baseX: 18 + index * 17,
+        baseY: 20 + (index % 2) * 38,
+        phase: index * 1.7,
+      }));
+
+      let pointerX = window.innerWidth * 0.5;
+      let pointerY = window.innerHeight * 0.4;
+      let targetPointerX = pointerX;
+      let targetPointerY = pointerY;
+      let lastRippleAt = 0;
+      let rippleToggle = false;
+      /* liquid variables removed */
+
+      function updateAurora(time) {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const pointerInfluenceX = ((targetPointerX / Math.max(1, width)) - 0.5) * 10;
+        const pointerInfluenceY = ((targetPointerY / Math.max(1, height)) - 0.5) * 10;
+
+        motionState.forEach((entry) => {
+          const driftX = Math.sin(time * 0.00012 + entry.phase) * 14 + Math.cos(time * 0.00007 + entry.phase * 1.6) * 8;
+          const driftY = Math.cos(time * 0.00011 + entry.phase) * 12 + Math.sin(time * 0.00008 + entry.phase * 1.4) * 9;
+          const scale = 0.95 + Math.sin(time * 0.00009 + entry.phase) * 0.06;
+          const x = entry.baseX + driftX + pointerInfluenceX * entry.depth;
+          const y = entry.baseY + driftY + pointerInfluenceY * entry.depth;
+
+          entry.blob.style.transform = `translate3d(${x}vw, ${y}vh, 0) scale(${scale})`;
+          entry.blob.style.opacity = String(0.62 + Math.sin(time * 0.00015 + entry.phase) * 0.08);
+        });
+
+        const easedX = pointerX + (targetPointerX - pointerX) * 0.08;
+        const easedY = pointerY + (targetPointerY - pointerY) * 0.08;
+        pointerX = easedX;
+        pointerY = easedY;
+
+        auroraScene.style.setProperty("--pointer-x", `${(pointerX / Math.max(1, width)) * 100}%`);
+        auroraScene.style.setProperty("--pointer-y", `${(pointerY / Math.max(1, height)) * 100}%`);
+
+        requestAnimationFrame(updateAurora);
+      }
+
+      function spawnRipple(x, y) {
+        if (!rippleLayer) {
+          return;
+        }
+
+        const ripple = document.createElement("span");
+        ripple.className = rippleToggle ? "ripple alt" : "ripple";
+        rippleToggle = !rippleToggle;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        rippleLayer.appendChild(ripple);
+
+        ripple.addEventListener("animationend", () => ripple.remove(), { once: true });
+      }
+
+      function onPointerMove(event) {
+        targetPointerX = event.clientX;
+        targetPointerY = event.clientY;
+
+        const now = performance.now();
+        const distance = Math.hypot(targetPointerX - pointerX, targetPointerY - pointerY);
+
+        if (now - lastRippleAt > 90 && distance > 10) {
+          spawnRipple(targetPointerX, targetPointerY);
+          lastRippleAt = now;
+        }
+        // no liquid behavior: ripples remain
+      }
+
+      window.addEventListener("pointermove", onPointerMove, { passive: true });
+      window.addEventListener("pointerdown", (event) => {
+        targetPointerX = event.clientX;
+        targetPointerY = event.clientY;
+        spawnRipple(targetPointerX, targetPointerY);
+      }, { passive: true });
+      window.addEventListener("pointerleave", () => {
+        targetPointerX = window.innerWidth * 0.5;
+        targetPointerY = window.innerHeight * 0.4;
+      });
+      window.addEventListener("resize", () => {
+        targetPointerX = Math.min(targetPointerX, window.innerWidth);
+        targetPointerY = Math.min(targetPointerY, window.innerHeight);
+      });
+
+      function tick() {
+        const currentWord = bioWords[wordIndex];
+        const nextText = isDeleting
+          ? currentWord.slice(0, Math.max(0, charIndex - 1))
+          : currentWord.slice(0, charIndex + 1);
+
+        bioElement.textContent = nextText;
+
+        if (!isDeleting && nextText === currentWord) {
+          isDeleting = true;
+          setTimeout(tick, pauseDelay);
+          return;
+        }
+
+        if (isDeleting && nextText === "") {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % bioWords.length;
+          charIndex = 0;
+          setTimeout(tick, typingDelay);
+          return;
+        }
+
+        charIndex = isDeleting ? Math.max(0, charIndex - 1) : charIndex + 1;
+        setTimeout(tick, isDeleting ? deletingDelay : typingDelay);
+      }
+
+      requestAnimationFrame(updateAurora);
+      tick();
+    </script>
+  </body>
+</html>
