@@ -1,0 +1,11 @@
+# LLMS metadata for https://atanusroy.com
+Site: https://atanusroy.com
+Title: Atanu Roy — Freelancer, Developer, AI Engineer, Researcher
+Description: Portfolio and contact for Atanu Roy — web & app development, AI/ML, embedded systems, and IoT research.
+Language: en
+Contact: atanuroy911@gmail.com
+Canonical: https://atanusroy.com/
+Robots: allow
+Sitemap: https://atanusroy.com/sitemap.xml
+Keywords: Freelancer, Developer, Web Developer, App Developer, Web Designer, UI/UX Developer, ReactJS Developer, ML Engineer, DevOps Engineer, Python Developer, AI Automation Engineer, Embedded System Researcher, IoT Researcher, AI Engineer, Researcher, Teacher
+Last-Updated: 2026-05-23
